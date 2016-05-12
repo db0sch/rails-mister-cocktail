@@ -1,34 +1,34 @@
 class DosesController < ApplicationController
 
-  def index
-    @doses = Doses.all
-  end
+  # def index
+  #   @doses = Dose.all
+  # end
 
-  def show
-    @dose = Doses.find(cocktail_params)
-  end
+  # def show
+  #   @dose = Dose.find(cocktail_params)
+  # end
 
   def new
-    @dose = Doses.new   
+    @dose = Dose.new   
   end
 
   def create
-    @dose = Doses.new(cocktail_params)
+    @dose = Dose.new(cocktail_params)
     @dose.save
     
     redirect_to cocktail_path(@dose)
   end
 
-  def edit
-    @dose = Doses.find(cocktail_params)
-  end
+  # def edit
+  #   @dose = Dose.find(cocktail_params)
+  # end
 
-  def update
-    @dose = Doses.new(cocktail_params)
-    @dose.update
+  # def update
+  #   @dose = Dose.new(cocktail_params)
+  #   @dose.update
 
-    redirect_to cocktail_path(@dose)
-  end
+  #   redirect_to cocktail_path(@dose)
+  # end
 
   def destroy
     

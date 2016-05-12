@@ -1,0 +1,11 @@
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :name %>
+  <!-- <%= f.input :address %> -->
+<!--   <%= f.input :stars %> -->
+
+<!-- il faut voir comment organiser le formulaire
+s'il faut choisir les ingrédients puis les doses -->
+  <%= f.button :submit %>
+<% end %>
