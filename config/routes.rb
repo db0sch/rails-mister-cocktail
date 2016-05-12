@@ -53,4 +53,10 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  resources :cocktails, only: [:new, :create, :index, :show] do
+    resources :doses, only: [:new, :create, :destroy]
+  end
+
+  root 'cocktails#index'
 end
