@@ -1,10 +1,22 @@
-<h1>highball</h1>
 
-
-<%= link_to "create a new cocktail", new_cocktail_path %>
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <%= link_to cocktail.name, cocktail_path(cocktail) %>
-    <%= cocktail.name %>
-  <% end %>
-</ul>
+<div class="container text-center">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 class= "text-center" id="main_title">highball</h1>
+    </div>
+  </div> 
+   
+  <div class="col-xs-12">
+    <%= link_to "create a new cocktail", new_cocktail_path, class: "btn btn-primary" %>
+  </div>  
+  
+  <div class="row">
+    <ul>
+      <% @cocktails.each do |cocktail| %>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    </div>
+      <% end %>
+    </ul>
+  </div>
+</div>
