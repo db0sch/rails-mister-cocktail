@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # security gem
 gem 'figaro'
 
+# cloudinary gem
+gem 'cloudinary'
+
 # attachinary gems
 gem "cloudinary"
 gem "attachinary"
