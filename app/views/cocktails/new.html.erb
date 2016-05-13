@@ -1,5 +1,18 @@
-<h2>Create your own cocktail</h2>
+<div class="container">
+  <h2 class="text-center">Create your own cocktail</h2>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+      <%= render 'form' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-1">
+      <%= link_to "back", cocktails_path, class:"btn btn-danger" %>
+    </div>
+  </div>
+</div>
 
-<%= render 'form' %>
 
-<%= link_to "back", cocktails_path %>
+
+
+
